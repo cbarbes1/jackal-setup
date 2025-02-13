@@ -6,3 +6,6 @@ Using ASCII to move flir ptu e46
 ```bash
 echo "PP-2500 *" > /dev/ttyUSB0
 ```
+
+
+setup driver found at 
