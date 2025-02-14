@@ -7,5 +7,7 @@ Using ASCII to move flir ptu e46
 echo "PP-2500 *" > /dev/ttyUSB0
 ```
 
-
-setup driver found at 
+Ros2 driver launch
+```bash
+ros2 launch hal_flir_d46 flir_d46.launch.py
+```
