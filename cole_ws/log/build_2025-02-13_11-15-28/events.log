@@ -1,0 +1,891 @@
+[0.000000] (-) TimerEvent: {}
+[0.000271] (camera) JobQueued: {'identifier': 'camera', 'dependencies': OrderedDict()}
+[0.000300] (ptu_interfaces) JobQueued: {'identifier': 'ptu_interfaces', 'dependencies': OrderedDict()}
+[0.000313] (sim_test) JobQueued: {'identifier': 'sim_test', 'dependencies': OrderedDict()}
+[0.000321] (video_stream) JobQueued: {'identifier': 'video_stream', 'dependencies': OrderedDict()}
+[0.000329] (hal_flir_d46) JobQueued: {'identifier': 'hal_flir_d46', 'dependencies': OrderedDict([('ptu_interfaces', '/home/cole/cole_ws/install/ptu_interfaces')])}
+[0.000763] (ptu_interfaces) JobStarted: {'identifier': 'ptu_interfaces'}
+[0.004792] (camera) JobStarted: {'identifier': 'camera'}
+[0.008195] (sim_test) JobStarted: {'identifier': 'sim_test'}
+[0.010432] (video_stream) JobStarted: {'identifier': 'video_stream'}
+[0.015736] (ptu_interfaces) JobProgress: {'identifier': 'ptu_interfaces', 'progress': 'cmake'}
+[0.016225] (ptu_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/cole/cole_ws/src/ROS2-PTU-Interfaces', '-DCMAKE_INSTALL_PREFIX=/home/cole/cole_ws/install/ptu_interfaces'], 'cwd': '/home/cole/cole_ws/build/ptu_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2247'), ('SYSTEMD_EXEC_PID', '2433'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6981'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:16167'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403'), ('INVOCATION_ID', '9317abea0dc545b8a01e28944f713783'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SPINNAKER_GENTL64_CTI', '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JSME12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/ptu_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/spinnaker-gentl'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/tmp/usr/local/setup.sh:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[0.100129] (-) TimerEvent: {}
+[0.181768] (sim_test) JobProgress: {'identifier': 'sim_test', 'progress': 'cmake'}
+[0.182024] (sim_test) JobProgress: {'identifier': 'sim_test', 'progress': 'build'}
+[0.182050] (sim_test) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cole/cole_ws/build/sim_test', '--', '-j16', '-l16'], 'cwd': '/home/cole/cole_ws/build/sim_test', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2247'), ('SYSTEMD_EXEC_PID', '2433'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6981'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:16167'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403'), ('INVOCATION_ID', '9317abea0dc545b8a01e28944f713783'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SPINNAKER_GENTL64_CTI', '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JSME12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/sim_test'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/spinnaker-gentl'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/tmp/usr/local/setup.sh:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[0.183345] (ptu_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.183814] (ptu_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.183941] (ptu_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.183973] (ptu_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.184003] (ptu_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.184032] (ptu_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.184060] (ptu_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.184088] (ptu_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200208] (-) TimerEvent: {}
+[0.219605] (ptu_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.220187] (sim_test) StdoutLine: {'line': b'[100%] Built target keypress\n'}
+[0.224609] (ptu_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.224686] (ptu_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.225018] (ptu_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.226693] (ptu_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300288] (-) TimerEvent: {}
+[0.329237] (ptu_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.355722] (sim_test) CommandEnded: {'returncode': 0}
+[0.356182] (sim_test) JobProgress: {'identifier': 'sim_test', 'progress': 'install'}
+[0.362878] (sim_test) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cole/cole_ws/build/sim_test'], 'cwd': '/home/cole/cole_ws/build/sim_test', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2247'), ('SYSTEMD_EXEC_PID', '2433'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6981'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:16167'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403'), ('INVOCATION_ID', '9317abea0dc545b8a01e28944f713783'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SPINNAKER_GENTL64_CTI', '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JSME12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/sim_test'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/spinnaker-gentl'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/tmp/usr/local/setup.sh:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[0.367578] (sim_test) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.367712] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/lib/sim_test/keypress\n'}
+[0.367842] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//config\n'}
+[0.367962] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//config/husky.rviz\n'}
+[0.368081] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//config/husky.bridge.yaml\n'}
+[0.368118] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//launch\n'}
+[0.368150] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//launch/sonoma.launch.py\n'}
+[0.368211] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//worlds\n'}
+[0.368242] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//worlds/sonoma2.sdf\n'}
+[0.368272] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//worlds/sim_world.sdf\n'}
+[0.368300] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models\n'}
+[0.368329] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky\n'}
+[0.368359] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/model.config\n'}
+[0.368389] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails\n'}
+[0.368418] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/4.jpg\n'}
+[0.368448] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/3.jpg\n'}
+[0.368478] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/2.jpg\n'}
+[0.368562] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/1.jpg\n'}
+[0.368592] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes\n'}
+[0.368620] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/spotlight.dae\n'}
+[0.368649] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/VLP16_scan.dae\n'}
+[0.368678] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/base_link.dae\n'}
+[0.368706] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/realsense.dae\n'}
+[0.368734] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/user_rail.dae\n'}
+[0.368762] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/wheel.dae\n'}
+[0.368847] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/top_chassis.dae\n'}
+[0.368877] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/VLP16_base_2.dae\n'}
+[0.368907] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/jpl04_arch_nosensor.stl\n'}
+[0.368936] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/VLP16_base_1.dae\n'}
+[0.368965] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/top_plate.dae\n'}
+[0.368995] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/bumper.dae\n'}
+[0.369025] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/model.sdf\n'}
+[0.369054] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials\n'}
+[0.369105] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials/textures\n'}
+[0.369131] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials/textures/realsense_diffuse.jpg\n'}
+[0.369157] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials/textures/spotlight.jpg\n'}
+[0.369183] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot1\n'}
+[0.369209] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot1/model.sdf\n'}
+[0.369235] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot2\n'}
+[0.369261] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot2/model.sdf\n'}
+[0.369287] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark\n'}
+[0.369312] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/model.config\n'}
+[0.369336] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/thumbnails\n'}
+[0.369364] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/thumbnails/2.png\n'}
+[0.369391] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/thumbnails/1.png\n'}
+[0.369423] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/thumbnails/5.png\n'}
+[0.369450] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/thumbnails/3.png\n'}
+[0.369478] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/thumbnails/4.png\n'}
+[0.369505] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/meshes\n'}
+[0.369531] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/meshes/nb_park.dae\n'}
+[0.369558] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/model.sdf\n'}
+[0.369585] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials\n'}
+[0.369612] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures\n'}
+[0.369640] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Roof_Normal.png\n'}
+[0.369668] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Wall_Albedo.png\n'}
+[0.369696] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Road_Albedo.png\n'}
+[0.369724] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Railing_Metalness.png\n'}
+[0.369751] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Asphalt_Albedo.png\n'}
+[0.369777] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Window_Roughness.png\n'}
+[0.369805] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Dock_Albedo.png\n'}
+[0.369832] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Asphalt_Roughness.png\n'}
+[0.369859] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Road_Normal.png\n'}
+[0.369886] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/PalmTree_Normal.png\n'}
+[0.369917] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Concrete_Albedo.png\n'}
+[0.369945] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Dock_Normal.png\n'}
+[0.369973] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Dock_Roughness.png\n'}
+[0.370001] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Wall_Normal.png\n'}
+[0.370029] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Grass_Albedo.jpg\n'}
+[0.370057] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/PalmTree_Albedo.png\n'}
+[0.370086] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Asphalt_Normal.png\n'}
+[0.370115] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Sand_Normal.png\n'}
+[0.370142] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Road_Roughness.png\n'}
+[0.370169] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Heightmap.png\n'}
+[0.370196] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Roof_Roughness.png\n'}
+[0.370223] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Grass_Normal.png\n'}
+[0.370250] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Railing_Roughness.png\n'}
+[0.370277] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Railing_Albedo.png\n'}
+[0.370305] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Sand_Albedo.png\n'}
+[0.370333] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Concrete_Roughness.png\n'}
+[0.370361] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/DoorWindow_Albedo.png\n'}
+[0.370388] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Window_Albedo.png\n'}
+[0.370418] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/flat_normal.png\n'}
+[0.370445] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Wall_Roughness.png\n'}
+[0.370472] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Tree_Albedo.png\n'}
+[0.370499] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Concrete_Normal.png\n'}
+[0.370527] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/EnvMap.dds\n'}
+[0.370554] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/NBPark/materials/textures/Roof_Albedo.png\n'}
+[0.370582] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/ament_index/resource_index/package_run_dependencies/sim_test\n'}
+[0.370609] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/ament_index/resource_index/parent_prefix_path/sim_test\n'}
+[0.370636] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/ament_prefix_path.sh\n'}
+[0.370663] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/ament_prefix_path.dsv\n'}
+[0.370689] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/path.sh\n'}
+[0.370716] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/path.dsv\n'}
+[0.370743] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.bash\n'}
+[0.370771] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.sh\n'}
+[0.370799] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.zsh\n'}
+[0.370827] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.dsv\n'}
+[0.370854] (sim_test) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/sim_test/share/sim_test/package.dsv\n'}
+[0.370881] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/ament_index/resource_index/packages/sim_test\n'}
+[0.371592] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/cmake/sim_testConfig.cmake\n'}
+[0.372134] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/cmake/sim_testConfig-version.cmake\n'}
+[0.372191] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/package.xml\n'}
+[0.372226] (sim_test) CommandEnded: {'returncode': 0}
+[0.381259] (sim_test) JobEnded: {'identifier': 'sim_test', 'rc': 0}
+[0.393172] (ptu_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.400388] (-) TimerEvent: {}
+[0.418386] (ptu_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.422112] (ptu_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.427991] (ptu_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.436066] (ptu_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.447167] (ptu_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.464638] (ptu_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.500497] (-) TimerEvent: {}
+[0.578472] (camera) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/camera', 'build', '--build-base', '/home/cole/cole_ws/build/camera/build', 'install', '--record', '/home/cole/cole_ws/build/camera/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cole/cole_ws/src/camera', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cole', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cole', 'OLDPWD': '/home/cole/cole_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2247', 'SYSTEMD_EXEC_PID': '2433', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6981', '_colcon_cd_root': '/home/cole/dev_ws', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/cole/cole_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cole', 'JOURNAL_STREAM': '8:16167', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cole', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/cole/dev_ws/src/basic_mobile_robot/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403', 'INVOCATION_ID': '9317abea0dc545b8a01e28944f713783', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SPINNAKER_GENTL64_CTI': '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JSME12', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': ':/home/cole/cole_ws/install/sim_test/models', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cole/cole_ws/build/camera', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cole/cole_ws/build/camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cole/cole_ws/install/camera/lib/python3.10/site-packages:/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'GENICAM_GENTL64_PATH': '/opt/spinnaker/lib/spinnaker-gentl', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/tmp/usr/local/setup.sh'}, 'shell': False}
+[0.600610] (-) TimerEvent: {}
+[0.632420] (video_stream) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/video_stream', 'build', '--build-base', '/home/cole/cole_ws/build/video_stream/build', 'install', '--record', '/home/cole/cole_ws/build/video_stream/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/cole/cole_ws/src/video_stream', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'cole', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/cole', 'OLDPWD': '/home/cole/cole_ws/src', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2247', 'SYSTEMD_EXEC_PID': '2433', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6981', '_colcon_cd_root': '/home/cole/dev_ws', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/cole/cole_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'cole', 'JOURNAL_STREAM': '8:16167', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'cole', 'TERM': 'xterm-256color', 'GAZEBO_MODEL_PATH': ':/home/cole/dev_ws/src/basic_mobile_robot/models/', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403', 'INVOCATION_ID': '9317abea0dc545b8a01e28944f713783', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SPINNAKER_GENTL64_CTI': '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JSME12', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'IGN_GAZEBO_RESOURCE_PATH': ':/home/cole/cole_ws/install/sim_test/models', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/cole/cole_ws/build/video_stream', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/cole/cole_ws/build/video_stream/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'GENICAM_GENTL64_PATH': '/opt/spinnaker/lib/spinnaker-gentl', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/tmp/usr/local/setup.sh'}, 'shell': False}
+[0.700738] (-) TimerEvent: {}
+[0.712937] (ptu_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.733124] (camera) StdoutLine: {'line': b'running egg_info\n'}
+[0.733467] (camera) StdoutLine: {'line': b'writing ../../build/camera/camera.egg-info/PKG-INFO\n'}
+[0.733666] (camera) StdoutLine: {'line': b'writing dependency_links to ../../build/camera/camera.egg-info/dependency_links.txt\n'}
+[0.733764] (camera) StdoutLine: {'line': b'writing entry points to ../../build/camera/camera.egg-info/entry_points.txt\n'}
+[0.733837] (camera) StdoutLine: {'line': b'writing requirements to ../../build/camera/camera.egg-info/requires.txt\n'}
+[0.733909] (camera) StdoutLine: {'line': b'writing top-level names to ../../build/camera/camera.egg-info/top_level.txt\n'}
+[0.734822] (camera) StdoutLine: {'line': b"reading manifest file '../../build/camera/camera.egg-info/SOURCES.txt'\n"}
+[0.734976] (camera) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.735189] (camera) StdoutLine: {'line': b"writing manifest file '../../build/camera/camera.egg-info/SOURCES.txt'\n"}
+[0.735286] (camera) StdoutLine: {'line': b'running build\n'}
+[0.735358] (camera) StdoutLine: {'line': b'running build_py\n'}
+[0.735525] (camera) StdoutLine: {'line': b'running install\n'}
+[0.735710] (camera) StdoutLine: {'line': b'running install_lib\n'}
+[0.736446] (camera) StdoutLine: {'line': b'running install_data\n'}
+[0.736590] (camera) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.737609] (camera) StdoutLine: {'line': b"removing '/home/cole/cole_ws/install/camera/lib/python3.10/site-packages/camera-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.737836] (camera) StdoutLine: {'line': b'Copying ../../build/camera/camera.egg-info to /home/cole/cole_ws/install/camera/lib/python3.10/site-packages/camera-0.0.0-py3.10.egg-info\n'}
+[0.738021] (camera) StdoutLine: {'line': b'running install_scripts\n'}
+[0.751329] (camera) StdoutLine: {'line': b"writing list of installed files to '/home/cole/cole_ws/build/camera/install.log'\n"}
+[0.765797] (camera) CommandEnded: {'returncode': 0}
+[0.769219] (camera) JobEnded: {'identifier': 'camera', 'rc': 0}
+[0.785887] (video_stream) StdoutLine: {'line': b'running egg_info\n'}
+[0.786291] (video_stream) StdoutLine: {'line': b'writing ../../build/video_stream/video_stream.egg-info/PKG-INFO\n'}
+[0.786454] (video_stream) StdoutLine: {'line': b'writing dependency_links to ../../build/video_stream/video_stream.egg-info/dependency_links.txt\n'}
+[0.786525] (video_stream) StdoutLine: {'line': b'writing entry points to ../../build/video_stream/video_stream.egg-info/entry_points.txt\n'}
+[0.786590] (video_stream) StdoutLine: {'line': b'writing requirements to ../../build/video_stream/video_stream.egg-info/requires.txt\n'}
+[0.786652] (video_stream) StdoutLine: {'line': b'writing top-level names to ../../build/video_stream/video_stream.egg-info/top_level.txt\n'}
+[0.787613] (video_stream) StdoutLine: {'line': b"reading manifest file '../../build/video_stream/video_stream.egg-info/SOURCES.txt'\n"}
+[0.787744] (video_stream) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[0.788023] (video_stream) StdoutLine: {'line': b"writing manifest file '../../build/video_stream/video_stream.egg-info/SOURCES.txt'\n"}
+[0.788155] (video_stream) StdoutLine: {'line': b'running build\n'}
+[0.788222] (video_stream) StdoutLine: {'line': b'running build_py\n'}
+[0.788412] (video_stream) StdoutLine: {'line': b'running install\n'}
+[0.788500] (video_stream) StdoutLine: {'line': b'running install_lib\n'}
+[0.789248] (video_stream) StdoutLine: {'line': b'running install_data\n'}
+[0.789377] (video_stream) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.790485] (video_stream) StdoutLine: {'line': b"removing '/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages/video_stream-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.790617] (video_stream) StdoutLine: {'line': b'Copying ../../build/video_stream/video_stream.egg-info to /home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages/video_stream-0.0.0-py3.10.egg-info\n'}
+[0.790774] (video_stream) StdoutLine: {'line': b'running install_scripts\n'}
+[0.800914] (-) TimerEvent: {}
+[0.803952] (video_stream) StdoutLine: {'line': b'Installing video_detect_pub script to /home/cole/cole_ws/install/video_stream/lib/video_stream\n'}
+[0.804090] (video_stream) StdoutLine: {'line': b'Installing video_pub script to /home/cole/cole_ws/install/video_stream/lib/video_stream\n'}
+[0.804289] (video_stream) StdoutLine: {'line': b"writing list of installed files to '/home/cole/cole_ws/build/video_stream/install.log'\n"}
+[0.818701] (video_stream) CommandEnded: {'returncode': 0}
+[0.822246] (video_stream) JobEnded: {'identifier': 'video_stream', 'rc': 0}
+[0.901112] (-) TimerEvent: {}
+[0.974319] (ptu_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.001258] (-) TimerEvent: {}
+[1.075851] (ptu_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.093263] (ptu_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.094567] (ptu_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.101416] (-) TimerEvent: {}
+[1.114881] (ptu_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.115038] (ptu_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.115104] (ptu_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.115163] (ptu_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.132460] (ptu_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.181842] (ptu_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.201571] (-) TimerEvent: {}
+[1.208790] (ptu_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.216901] (ptu_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/cole/cole_ws/build/ptu_interfaces\n'}
+[1.223546] (ptu_interfaces) CommandEnded: {'returncode': 0}
+[1.223780] (ptu_interfaces) JobProgress: {'identifier': 'ptu_interfaces', 'progress': 'build'}
+[1.223797] (ptu_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cole/cole_ws/build/ptu_interfaces', '--', '-j16', '-l16'], 'cwd': '/home/cole/cole_ws/build/ptu_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2247'), ('SYSTEMD_EXEC_PID', '2433'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6981'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:16167'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403'), ('INVOCATION_ID', '9317abea0dc545b8a01e28944f713783'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SPINNAKER_GENTL64_CTI', '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JSME12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/ptu_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/spinnaker-gentl'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/tmp/usr/local/setup.sh:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[1.258204] (ptu_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.266916] (ptu_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.271644] (ptu_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_ptu_interfaces\n'}
+[1.301699] (-) TimerEvent: {}
+[1.402066] (-) TimerEvent: {}
+[1.427448] (ptu_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.427771] (ptu_interfaces) StdoutLine: {'line': b'creating ptu_interfaces.egg-info\n'}
+[1.428006] (ptu_interfaces) StdoutLine: {'line': b'writing ptu_interfaces.egg-info/PKG-INFO\n'}
+[1.428116] (ptu_interfaces) StdoutLine: {'line': b'writing dependency_links to ptu_interfaces.egg-info/dependency_links.txt\n'}
+[1.428201] (ptu_interfaces) StdoutLine: {'line': b'writing top-level names to ptu_interfaces.egg-info/top_level.txt\n'}
+[1.428422] (ptu_interfaces) StdoutLine: {'line': b"writing manifest file 'ptu_interfaces.egg-info/SOURCES.txt'\n"}
+[1.429312] (ptu_interfaces) StdoutLine: {'line': b"reading manifest file 'ptu_interfaces.egg-info/SOURCES.txt'\n"}
+[1.429610] (ptu_interfaces) StdoutLine: {'line': b"writing manifest file 'ptu_interfaces.egg-info/SOURCES.txt'\n"}
+[1.446653] (ptu_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_ptu_interfaces_egg\n'}
+[1.502257] (-) TimerEvent: {}
+[1.602583] (-) TimerEvent: {}
+[1.702915] (-) TimerEvent: {}
+[1.803253] (-) TimerEvent: {}
+[1.903584] (-) TimerEvent: {}
+[2.001319] (ptu_interfaces) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ptu_interfaces/msg/detail/ptu__functions.c.o\x1b[0m\n'}
+[2.001569] (ptu_interfaces) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ptu_interfaces/srv/detail/set_pan__functions.c.o\x1b[0m\n'}
+[2.001709] (ptu_interfaces) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ptu_interfaces/srv/detail/set_pan_tilt__functions.c.o\x1b[0m\n'}
+[2.001800] (ptu_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ptu_interfaces/srv/detail/set_pan_tilt_speed__functions.c.o\x1b[0m\n'}
+[2.002524] (ptu_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ptu_interfaces/action/detail/set_pan__functions.c.o\x1b[0m\n'}
+[2.002616] (ptu_interfaces) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ptu_interfaces/srv/detail/set_tilt__functions.c.o\x1b[0m\n'}
+[2.003173] (ptu_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ptu_interfaces/action/detail/set_tilt__functions.c.o\x1b[0m\n'}
+[2.003262] (ptu_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ptu_interfaces/action/detail/set_pan_tilt__functions.c.o\x1b[0m\n'}
+[2.003658] (-) TimerEvent: {}
+[2.004531] (ptu_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_c.dir/rosidl_generator_c/ptu_interfaces/srv/detail/get_limits__functions.c.o\x1b[0m\n'}
+[2.006927] (ptu_interfaces) StdoutLine: {'line': b'[ 11%] Built target ptu_interfaces__cpp\n'}
+[2.015958] (ptu_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.016167] (ptu_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.016264] (ptu_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.088252] (ptu_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libptu_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.103781] (-) TimerEvent: {}
+[2.114378] (ptu_interfaces) StdoutLine: {'line': b'[ 15%] Built target ptu_interfaces__rosidl_generator_c\n'}
+[2.123563] (ptu_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.123791] (ptu_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.123834] (ptu_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.203952] (-) TimerEvent: {}
+[2.304211] (-) TimerEvent: {}
+[2.401311] (ptu_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ptu_interfaces/action/set_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.401523] (ptu_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ptu_interfaces/action/set_pan__type_support.cpp.o\x1b[0m\n'}
+[2.401647] (ptu_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ptu_interfaces/msg/ptu__type_support.cpp.o\x1b[0m\n'}
+[2.401778] (ptu_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ptu_interfaces/action/set_pan_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.401951] (ptu_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ptu_interfaces/srv/set_pan__type_support.cpp.o\x1b[0m\n'}
+[2.402174] (ptu_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ptu_interfaces/srv/set_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.402433] (ptu_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ptu_interfaces/srv/set_pan_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.402567] (ptu_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ptu_interfaces/srv/set_pan_tilt_speed__type_support.cpp.o\x1b[0m\n'}
+[2.402945] (ptu_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ptu_interfaces/srv/get_limits__type_support.cpp.o\x1b[0m\n'}
+[2.404281] (-) TimerEvent: {}
+[2.503111] (ptu_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ptu_interfaces/msg/ptu__type_support.cpp.o\x1b[0m\n'}
+[2.503341] (ptu_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ptu_interfaces/srv/set_pan__type_support.cpp.o\x1b[0m\n'}
+[2.505826] (-) TimerEvent: {}
+[2.509421] (ptu_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ptu_interfaces/srv/set_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.532542] (ptu_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ptu_interfaces/srv/set_pan_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.535276] (ptu_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ptu_interfaces/srv/set_pan_tilt_speed__type_support.cpp.o\x1b[0m\n'}
+[2.541086] (ptu_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ptu_interfaces/srv/get_limits__type_support.cpp.o\x1b[0m\n'}
+[2.564812] (ptu_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ptu_interfaces/action/set_pan__type_support.cpp.o\x1b[0m\n'}
+[2.570099] (ptu_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ptu_interfaces/action/set_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.570357] (ptu_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/ptu_interfaces/action/set_pan_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.579101] (ptu_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ptu_interfaces/msg/detail/ptu__type_support.cpp.o\x1b[0m\n'}
+[2.579401] (ptu_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ptu_interfaces/srv/detail/set_pan__type_support.cpp.o\x1b[0m\n'}
+[2.591974] (ptu_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ptu_interfaces/srv/detail/set_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.600273] (ptu_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ptu_interfaces/srv/detail/set_pan_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.607943] (-) TimerEvent: {}
+[2.608764] (ptu_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ptu_interfaces/srv/detail/set_pan_tilt_speed__type_support.cpp.o\x1b[0m\n'}
+[2.619114] (ptu_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libptu_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.633806] (ptu_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ptu_interfaces/srv/detail/get_limits__type_support.cpp.o\x1b[0m\n'}
+[2.665610] (ptu_interfaces) StdoutLine: {'line': b'[ 45%] Built target ptu_interfaces__rosidl_typesupport_c\n'}
+[2.674477] (ptu_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ptu_interfaces/action/detail/set_pan__type_support.cpp.o\x1b[0m\n'}
+[2.681109] (ptu_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ptu_interfaces/action/detail/set_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.685510] (ptu_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ptu_interfaces/action/detail/set_pan_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.708065] (-) TimerEvent: {}
+[2.727156] (ptu_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ptu_interfaces/msg/detail/dds_fastrtps/ptu__type_support.cpp.o\x1b[0m\n'}
+[2.727377] (ptu_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ptu_interfaces/srv/detail/dds_fastrtps/set_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.727476] (ptu_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ptu_interfaces/srv/detail/dds_fastrtps/set_pan__type_support.cpp.o\x1b[0m\n'}
+[2.730398] (ptu_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ptu_interfaces/srv/detail/dds_fastrtps/set_pan_tilt__type_support.cpp.o\x1b[0m\n'}
+[2.739546] (ptu_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ptu_interfaces/msg/detail/ptu__type_support.c.o\x1b[0m\n'}
+[2.765778] (ptu_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ptu_interfaces/srv/detail/set_pan__type_support.c.o\x1b[0m\n'}
+[2.795773] (ptu_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ptu_interfaces/msg/detail/ptu__type_support_c.cpp.o\x1b[0m\n'}
+[2.801585] (ptu_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ptu_interfaces/srv/detail/set_tilt__type_support.c.o\x1b[0m\n'}
+[2.808180] (-) TimerEvent: {}
+[2.808483] (ptu_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ptu_interfaces/srv/detail/set_pan__type_support_c.cpp.o\x1b[0m\n'}
+[2.823752] (ptu_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ptu_interfaces/srv/detail/set_pan_tilt__type_support.c.o\x1b[0m\n'}
+[2.842350] (ptu_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ptu_interfaces/srv/detail/dds_fastrtps/set_pan_tilt_speed__type_support.cpp.o\x1b[0m\n'}
+[2.843921] (ptu_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ptu_interfaces/srv/detail/set_tilt__type_support_c.cpp.o\x1b[0m\n'}
+[2.846194] (ptu_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ptu_interfaces/srv/detail/set_pan_tilt_speed__type_support.c.o\x1b[0m\n'}
+[2.869989] (ptu_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ptu_interfaces/srv/detail/get_limits__type_support.c.o\x1b[0m\n'}
+[2.870133] (ptu_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ptu_interfaces/srv/detail/set_pan_tilt__type_support_c.cpp.o\x1b[0m\n'}
+[2.875341] (ptu_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ptu_interfaces/srv/detail/set_pan_tilt_speed__type_support_c.cpp.o\x1b[0m\n'}
+[2.888667] (ptu_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ptu_interfaces/action/detail/set_pan__type_support.c.o\x1b[0m\n'}
+[2.903050] (ptu_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libptu_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.908270] (-) TimerEvent: {}
+[2.917020] (ptu_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ptu_interfaces/action/detail/set_tilt__type_support.c.o\x1b[0m\n'}
+[2.945542] (ptu_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ptu_interfaces/action/detail/set_pan_tilt__type_support.c.o\x1b[0m\n'}
+[2.965122] (ptu_interfaces) StdoutLine: {'line': b'[ 69%] Built target ptu_interfaces__rosidl_typesupport_cpp\n'}
+[2.974206] (ptu_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ptu_interfaces/srv/detail/get_limits__type_support_c.cpp.o\x1b[0m\n'}
+[2.976630] (ptu_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ptu_interfaces/action/detail/set_pan__type_support_c.cpp.o\x1b[0m\n'}
+[2.976869] (ptu_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking C shared library libptu_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.008361] (-) TimerEvent: {}
+[3.012861] (ptu_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ptu_interfaces/srv/detail/dds_fastrtps/get_limits__type_support.cpp.o\x1b[0m\n'}
+[3.014292] (ptu_interfaces) StdoutLine: {'line': b'[ 73%] Built target ptu_interfaces__rosidl_typesupport_introspection_c\n'}
+[3.014601] (ptu_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ptu_interfaces/action/detail/dds_fastrtps/set_pan__type_support.cpp.o\x1b[0m\n'}
+[3.015436] (ptu_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ptu_interfaces/action/detail/set_tilt__type_support_c.cpp.o\x1b[0m\n'}
+[3.021645] (ptu_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ptu_interfaces/action/detail/set_pan_tilt__type_support_c.cpp.o\x1b[0m\n'}
+[3.038205] (ptu_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ptu_interfaces/action/detail/dds_fastrtps/set_tilt__type_support.cpp.o\x1b[0m\n'}
+[3.042635] (ptu_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ptu_interfaces/action/detail/dds_fastrtps/set_pan_tilt__type_support.cpp.o\x1b[0m\n'}
+[3.108479] (-) TimerEvent: {}
+[3.208777] (-) TimerEvent: {}
+[3.302222] (ptu_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libptu_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.308884] (-) TimerEvent: {}
+[3.309158] (ptu_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libptu_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.355383] (ptu_interfaces) StdoutLine: {'line': b'[ 81%] Built target ptu_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.361649] (ptu_interfaces) StdoutLine: {'line': b'[ 81%] Built target ptu_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.409053] (-) TimerEvent: {}
+[3.419850] (ptu_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX shared library libptu_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.481883] (ptu_interfaces) StdoutLine: {'line': b'[ 82%] Built target ptu_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.504056] (ptu_interfaces) StdoutLine: {'line': b'[ 82%] Built target ptu_interfaces\n'}
+[3.509210] (-) TimerEvent: {}
+[3.527970] (ptu_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.609396] (-) TimerEvent: {}
+[3.709670] (-) TimerEvent: {}
+[3.809926] (-) TimerEvent: {}
+[3.910165] (-) TimerEvent: {}
+[4.010420] (-) TimerEvent: {}
+[4.110664] (-) TimerEvent: {}
+[4.210900] (-) TimerEvent: {}
+[4.311138] (-) TimerEvent: {}
+[4.411388] (-) TimerEvent: {}
+[4.511630] (-) TimerEvent: {}
+[4.611870] (-) TimerEvent: {}
+[4.712122] (-) TimerEvent: {}
+[4.812378] (-) TimerEvent: {}
+[4.912643] (-) TimerEvent: {}
+[4.936331] (ptu_interfaces) StdoutLine: {'line': b'[ 83%] Built target ptu_interfaces__py\n'}
+[4.955753] (ptu_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ptu_interfaces/srv/_set_tilt_s.c.o\x1b[0m\n'}
+[4.956246] (ptu_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ptu_interfaces/srv/_set_pan_tilt_speed_s.c.o\x1b[0m\n'}
+[4.956543] (ptu_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ptu_interfaces/srv/_set_pan_tilt_s.c.o\x1b[0m\n'}
+[4.958366] (ptu_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ptu_interfaces/msg/_ptu_s.c.o\x1b[0m\n'}
+[4.959267] (ptu_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ptu_interfaces/srv/_set_pan_s.c.o\x1b[0m\n'}
+[4.959583] (ptu_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ptu_interfaces/action/_set_tilt_s.c.o\x1b[0m\n'}
+[4.961000] (ptu_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ptu_interfaces/srv/_get_limits_s.c.o\x1b[0m\n'}
+[4.961514] (ptu_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ptu_interfaces/action/_set_pan_s.c.o\x1b[0m\n'}
+[4.962972] (ptu_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_generator_py.dir/rosidl_generator_py/ptu_interfaces/action/_set_pan_tilt_s.c.o\x1b[0m\n'}
+[5.012807] (-) TimerEvent: {}
+[5.079869] (ptu_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ptu_interfaces/libptu_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[5.112912] (-) TimerEvent: {}
+[5.117341] (ptu_interfaces) StdoutLine: {'line': b'[ 93%] Built target ptu_interfaces__rosidl_generator_py\n'}
+[5.140563] (ptu_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ptu_interfaces/_ptu_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.143264] (ptu_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ptu_interfaces/_ptu_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.143662] (ptu_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/ptu_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ptu_interfaces/_ptu_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.213115] (-) TimerEvent: {}
+[5.278747] (ptu_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.278948] (ptu_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.279045] (ptu_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.308486] (ptu_interfaces) StdoutLine: {'line': b'[100%] Built target ptu_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.310265] (ptu_interfaces) StdoutLine: {'line': b'[100%] Built target ptu_interfaces__rosidl_typesupport_c__pyext\n'}
+[5.310464] (ptu_interfaces) StdoutLine: {'line': b'[100%] Built target ptu_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[5.313200] (-) TimerEvent: {}
+[5.319673] (ptu_interfaces) CommandEnded: {'returncode': 0}
+[5.320360] (ptu_interfaces) JobProgress: {'identifier': 'ptu_interfaces', 'progress': 'install'}
+[5.320642] (ptu_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cole/cole_ws/build/ptu_interfaces'], 'cwd': '/home/cole/cole_ws/build/ptu_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2247'), ('SYSTEMD_EXEC_PID', '2433'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6981'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:16167'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403'), ('INVOCATION_ID', '9317abea0dc545b8a01e28944f713783'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SPINNAKER_GENTL64_CTI', '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JSME12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/ptu_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/spinnaker-gentl'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/tmp/usr/local/setup.sh:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[5.329809] (ptu_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.330082] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ament_index/resource_index/rosidl_interfaces/ptu_interfaces\n'}
+[5.330261] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces\n'}
+[5.330519] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv\n'}
+[5.330741] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/set_tilt.h\n'}
+[5.330884] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/get_limits.h\n'}
+[5.331277] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/set_pan_tilt.h\n'}
+[5.331426] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail\n'}
+[5.331590] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__functions.c\n'}
+[5.331717] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__struct.h\n'}
+[5.331840] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__functions.h\n'}
+[5.331972] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__functions.h\n'}
+[5.332190] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__functions.h\n'}
+[5.332312] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__struct.h\n'}
+[5.332432] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__struct.h\n'}
+[5.332552] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__functions.h\n'}
+[5.332745] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__type_support.h\n'}
+[5.332931] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__type_support.h\n'}
+[5.333104] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__functions.c\n'}
+[5.333249] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__type_support.h\n'}
+[5.333369] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__functions.h\n'}
+[5.333488] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__functions.c\n'}
+[5.333607] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__functions.c\n'}
+[5.333725] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__struct.h\n'}
+[5.333911] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__type_support.h\n'}
+[5.334059] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__functions.c\n'}
+[5.334203] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__type_support.h\n'}
+[5.334316] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__struct.h\n'}
+[5.334427] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/set_pan.h\n'}
+[5.334538] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/set_pan_tilt_speed.h\n'}
+[5.334650] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg\n'}
+[5.334761] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.334871] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail\n'}
+[5.335192] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__struct.h\n'}
+[5.335275] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__type_support.h\n'}
+[5.335329] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__functions.c\n'}
+[5.335377] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__functions.h\n'}
+[5.335423] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/ptu.h\n'}
+[5.335508] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action\n'}
+[5.335557] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/set_tilt.h\n'}
+[5.335606] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/set_pan_tilt.h\n'}
+[5.335655] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail\n'}
+[5.335705] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__functions.c\n'}
+[5.335753] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__struct.h\n'}
+[5.335799] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__functions.h\n'}
+[5.335845] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__functions.h\n'}
+[5.335894] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__struct.h\n'}
+[5.335938] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__type_support.h\n'}
+[5.335975] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__functions.h\n'}
+[5.336014] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__functions.c\n'}
+[5.336132] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__functions.c\n'}
+[5.336193] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__type_support.h\n'}
+[5.336234] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__type_support.h\n'}
+[5.336275] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__struct.h\n'}
+[5.336314] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/set_pan.h\n'}
+[5.336354] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/environment/library_path.sh\n'}
+[5.336392] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/environment/library_path.dsv\n'}
+[5.336430] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_generator_c.so\n'}
+[5.336468] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_generator_c.so" to ""\n'}
+[5.336505] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces\n'}
+[5.336542] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv\n'}
+[5.336580] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail\n'}
+[5.336634] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__rosidl_typesupport_fastrtps_c.h\n'}
+[5.336674] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__rosidl_typesupport_fastrtps_c.h\n'}
+[5.336713] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__rosidl_typesupport_fastrtps_c.h\n'}
+[5.336750] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__rosidl_typesupport_fastrtps_c.h\n'}
+[5.336787] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__rosidl_typesupport_fastrtps_c.h\n'}
+[5.336825] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg\n'}
+[5.336865] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.336905] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail\n'}
+[5.336945] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__rosidl_typesupport_fastrtps_c.h\n'}
+[5.336985] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action\n'}
+[5.337050] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail\n'}
+[5.337091] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__rosidl_typesupport_fastrtps_c.h\n'}
+[5.337130] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__rosidl_typesupport_fastrtps_c.h\n'}
+[5.337169] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__rosidl_typesupport_fastrtps_c.h\n'}
+[5.337207] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[5.337244] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[5.337282] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces\n'}
+[5.337320] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv\n'}
+[5.337356] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/set_pan_tilt_speed.hpp\n'}
+[5.337394] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/set_pan.hpp\n'}
+[5.337431] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/set_pan_tilt.hpp\n'}
+[5.337521] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail\n'}
+[5.337563] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__builder.hpp\n'}
+[5.337601] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__type_support.hpp\n'}
+[5.337659] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__traits.hpp\n'}
+[5.337698] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__traits.hpp\n'}
+[5.337737] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__builder.hpp\n'}
+[5.337776] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__type_support.hpp\n'}
+[5.337815] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__traits.hpp\n'}
+[5.337853] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__struct.hpp\n'}
+[5.337897] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__struct.hpp\n'}
+[5.337936] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__traits.hpp\n'}
+[5.337973] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__type_support.hpp\n'}
+[5.338015] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__builder.hpp\n'}
+[5.338053] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__builder.hpp\n'}
+[5.338090] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__struct.hpp\n'}
+[5.338128] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__type_support.hpp\n'}
+[5.338164] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__struct.hpp\n'}
+[5.338201] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__traits.hpp\n'}
+[5.338237] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__struct.hpp\n'}
+[5.338274] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__type_support.hpp\n'}
+[5.338312] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__builder.hpp\n'}
+[5.338348] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/set_tilt.hpp\n'}
+[5.338386] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/get_limits.hpp\n'}
+[5.338427] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg\n'}
+[5.338460] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail\n'}
+[5.338490] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__builder.hpp\n'}
+[5.338521] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__type_support.hpp\n'}
+[5.338551] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__struct.hpp\n'}
+[5.338581] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__traits.hpp\n'}
+[5.338611] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/ptu.hpp\n'}
+[5.338692] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.338727] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action\n'}
+[5.338782] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/set_pan.hpp\n'}
+[5.338813] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/set_pan_tilt.hpp\n'}
+[5.338855] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail\n'}
+[5.338887] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__builder.hpp\n'}
+[5.338924] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__type_support.hpp\n'}
+[5.338956] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__traits.hpp\n'}
+[5.338987] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__traits.hpp\n'}
+[5.339017] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__struct.hpp\n'}
+[5.339047] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__traits.hpp\n'}
+[5.339076] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__type_support.hpp\n'}
+[5.339106] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__builder.hpp\n'}
+[5.339136] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__builder.hpp\n'}
+[5.339165] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__struct.hpp\n'}
+[5.339194] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__type_support.hpp\n'}
+[5.339235] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__struct.hpp\n'}
+[5.339265] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/set_tilt.hpp\n'}
+[5.339295] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces\n'}
+[5.339325] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv\n'}
+[5.339357] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail\n'}
+[5.339387] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.339417] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/dds_fastrtps\n'}
+[5.339448] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.339478] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.339544] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.339575] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.339604] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg\n'}
+[5.339635] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.339668] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail\n'}
+[5.339700] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/dds_fastrtps\n'}
+[5.339731] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.339762] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action\n'}
+[5.339814] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail\n'}
+[5.339849] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.339881] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/dds_fastrtps\n'}
+[5.339914] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.339944] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.339994] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.340026] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[5.340059] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces\n'}
+[5.340090] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv\n'}
+[5.340121] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail\n'}
+[5.340151] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__type_support.c\n'}
+[5.340181] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__rosidl_typesupport_introspection_c.h\n'}
+[5.340211] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__rosidl_typesupport_introspection_c.h\n'}
+[5.340241] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__type_support.c\n'}
+[5.340271] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__rosidl_typesupport_introspection_c.h\n'}
+[5.340301] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__rosidl_typesupport_introspection_c.h\n'}
+[5.340345] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__type_support.c\n'}
+[5.340406] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__rosidl_typesupport_introspection_c.h\n'}
+[5.340440] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__type_support.c\n'}
+[5.340472] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__type_support.c\n'}
+[5.340503] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg\n'}
+[5.340535] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.340565] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail\n'}
+[5.340596] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__type_support.c\n'}
+[5.340625] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__rosidl_typesupport_introspection_c.h\n'}
+[5.340657] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action\n'}
+[5.340687] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail\n'}
+[5.340716] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__type_support.c\n'}
+[5.340765] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__rosidl_typesupport_introspection_c.h\n'}
+[5.340795] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__rosidl_typesupport_introspection_c.h\n'}
+[5.340824] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__type_support.c\n'}
+[5.340852] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__rosidl_typesupport_introspection_c.h\n'}
+[5.340884] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__type_support.c\n'}
+[5.340915] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[5.340963] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[5.340995] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_c.so\n'}
+[5.341106] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[5.341154] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces\n'}
+[5.341185] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv\n'}
+[5.341215] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail\n'}
+[5.341254] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.341300] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__type_support.cpp\n'}
+[5.341330] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__type_support.cpp\n'}
+[5.341374] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__type_support.cpp\n'}
+[5.341420] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt_speed__type_support.cpp\n'}
+[5.341448] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan_tilt__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.341489] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.341530] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/get_limits__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.341571] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_pan__type_support.cpp\n'}
+[5.341612] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/srv/detail/set_tilt__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.341659] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg\n'}
+[5.341687] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail\n'}
+[5.341717] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__type_support.cpp\n'}
+[5.341756] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/msg/detail/ptu__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.341801] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action\n'}
+[5.341831] (ptu_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail\n'}
+[5.341860] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__type_support.cpp\n'}
+[5.341905] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__type_support.cpp\n'}
+[5.341937] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan_tilt__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.341979] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.342008] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_pan__type_support.cpp\n'}
+[5.342046] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/include/ptu_interfaces/ptu_interfaces/action/detail/set_tilt__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.342098] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[5.342298] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[5.342337] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_cpp.so\n'}
+[5.342492] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[5.342532] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/environment/pythonpath.sh\n'}
+[5.342570] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/environment/pythonpath.dsv\n'}
+[5.342613] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces-0.0.0-py3.10.egg-info\n'}
+[5.342679] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[5.342723] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[5.342764] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[5.342810] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[5.342849] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces\n'}
+[5.342887] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/_ptu_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[5.343100] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv\n'}
+[5.343143] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/__init__.py\n'}
+[5.343187] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_pan_tilt_s.c\n'}
+[5.343227] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_get_limits.py\n'}
+[5.343267] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_pan_tilt_speed.py\n'}
+[5.343307] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_tilt.py\n'}
+[5.343352] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_get_limits_s.c\n'}
+[5.343392] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_pan_tilt_speed_s.c\n'}
+[5.343432] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_pan_tilt.py\n'}
+[5.343471] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_tilt_s.c\n'}
+[5.343515] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_pan.py\n'}
+[5.343556] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_pan_s.c\n'}
+[5.343596] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.343675] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/__init__.py\n'}
+[5.343714] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.343801] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/libptu_interfaces__rosidl_generator_py.so\n'}
+[5.343888] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/_ptu_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.344194] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/msg\n'}
+[5.344252] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/msg/_ptu.py\n'}
+[5.344294] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/msg/__init__.py\n'}
+[5.344346] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/msg/_ptu_s.c\n'}
+[5.344377] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action\n'}
+[5.344424] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/__init__.py\n'}
+[5.344453] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/_set_pan_tilt_s.c\n'}
+[5.344494] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/_set_tilt.py\n'}
+[5.344535] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/_set_pan_tilt.py\n'}
+[5.344574] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/_set_tilt_s.c\n'}
+[5.344622] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/_set_pan.py\n'}
+[5.344684] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/_set_pan_s.c\n'}
+[5.344734] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.344825] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/_ptu_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.388904] (ptu_interfaces) StdoutLine: {'line': b"Listing '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces'...\n"}
+[5.389025] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/__init__.py'...\n"}
+[5.389063] (ptu_interfaces) StdoutLine: {'line': b"Listing '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action'...\n"}
+[5.389093] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/__init__.py'...\n"}
+[5.389122] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/_set_pan.py'...\n"}
+[5.389149] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/_set_pan_tilt.py'...\n"}
+[5.389177] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/action/_set_tilt.py'...\n"}
+[5.389205] (ptu_interfaces) StdoutLine: {'line': b"Listing '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/msg'...\n"}
+[5.389233] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/msg/__init__.py'...\n"}
+[5.389265] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/msg/_ptu.py'...\n"}
+[5.389292] (ptu_interfaces) StdoutLine: {'line': b"Listing '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv'...\n"}
+[5.389320] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/__init__.py'...\n"}
+[5.389346] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_get_limits.py'...\n"}
+[5.389371] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_pan.py'...\n"}
+[5.389396] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_pan_tilt.py'...\n"}
+[5.389422] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_pan_tilt_speed.py'...\n"}
+[5.389448] (ptu_interfaces) StdoutLine: {'line': b"Compiling '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/srv/_set_tilt.py'...\n"}
+[5.392514] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.392607] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.392777] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.393005] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.393084] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[5.393951] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages/ptu_interfaces/ptu_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[5.394031] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_generator_py.so\n'}
+[5.394070] (ptu_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/ptu_interfaces/lib/libptu_interfaces__rosidl_generator_py.so" to ""\n'}
+[5.394102] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/msg/PTU.idl\n'}
+[5.394134] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPan.idl\n'}
+[5.394162] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetTilt.idl\n'}
+[5.394191] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPanTilt.idl\n'}
+[5.394221] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPanTiltSpeed.idl\n'}
+[5.394250] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/GetLimits.idl\n'}
+[5.394289] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/action/SetPan.idl\n'}
+[5.394320] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/action/SetTilt.idl\n'}
+[5.394385] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/action/SetPanTilt.idl\n'}
+[5.394422] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/msg/PTU.msg\n'}
+[5.394451] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPan.srv\n'}
+[5.394480] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPan_Request.msg\n'}
+[5.394508] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPan_Response.msg\n'}
+[5.394537] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetTilt.srv\n'}
+[5.394566] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetTilt_Request.msg\n'}
+[5.394593] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetTilt_Response.msg\n'}
+[5.394621] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPanTilt.srv\n'}
+[5.394676] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPanTilt_Request.msg\n'}
+[5.394712] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPanTilt_Response.msg\n'}
+[5.394741] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPanTiltSpeed.srv\n'}
+[5.394782] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPanTiltSpeed_Request.msg\n'}
+[5.394817] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/SetPanTiltSpeed_Response.msg\n'}
+[5.394845] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/GetLimits.srv\n'}
+[5.394873] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/GetLimits_Request.msg\n'}
+[5.394923] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/srv/GetLimits_Response.msg\n'}
+[5.394953] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/action/SetPan.action\n'}
+[5.394982] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/action/SetTilt.action\n'}
+[5.395010] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/action/SetPanTilt.action\n'}
+[5.395038] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ament_index/resource_index/package_run_dependencies/ptu_interfaces\n'}
+[5.395066] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ament_index/resource_index/parent_prefix_path/ptu_interfaces\n'}
+[5.395108] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/environment/ament_prefix_path.sh\n'}
+[5.395162] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/environment/ament_prefix_path.dsv\n'}
+[5.395191] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/environment/path.sh\n'}
+[5.395225] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/environment/path.dsv\n'}
+[5.395252] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/local_setup.bash\n'}
+[5.395279] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/local_setup.sh\n'}
+[5.395320] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/local_setup.zsh\n'}
+[5.395373] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/local_setup.dsv\n'}
+[5.395403] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/package.dsv\n'}
+[5.395443] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ament_index/resource_index/packages/ptu_interfaces\n'}
+[5.395482] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/export_ptu_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.395544] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/export_ptu_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.395601] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/export_ptu_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.395650] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/export_ptu_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.395709] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/export_ptu_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.395767] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/export_ptu_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.395820] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/export_ptu_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.395880] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.395938] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.395998] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.396050] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.396110] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.396169] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.396227] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.396278] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.396338] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/export_ptu_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.396392] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/export_ptu_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.396446] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[5.396494] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.396550] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.396604] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.396658] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.396707] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.396762] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.396814] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfacesConfig.cmake\n'}
+[5.396852] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake/ptu_interfacesConfig-version.cmake\n'}
+[5.396935] (ptu_interfaces) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/package.xml\n'}
+[5.399011] (ptu_interfaces) CommandEnded: {'returncode': 0}
+[5.407979] (ptu_interfaces) JobEnded: {'identifier': 'ptu_interfaces', 'rc': 0}
+[5.408498] (hal_flir_d46) JobStarted: {'identifier': 'hal_flir_d46'}
+[5.413293] (-) TimerEvent: {}
+[5.416527] (hal_flir_d46) JobProgress: {'identifier': 'hal_flir_d46', 'progress': 'cmake'}
+[5.417266] (hal_flir_d46) Command: {'cmd': ['/usr/bin/cmake', '/home/cole/cole_ws/src/ROS2-HAL-Flir-PTU-D46', '-DCMAKE_INSTALL_PREFIX=/home/cole/cole_ws/install/hal_flir_d46'], 'cwd': '/home/cole/cole_ws/build/hal_flir_d46', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cole/cole_ws/install/ptu_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2247'), ('SYSTEMD_EXEC_PID', '2433'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6981'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:16167'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403'), ('INVOCATION_ID', '9317abea0dc545b8a01e28944f713783'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SPINNAKER_GENTL64_CTI', '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JSME12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/ptu_interfaces:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/hal_flir_d46'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages:/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/spinnaker-gentl'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/cole/cole_ws/install/ptu_interfaces:/tmp/usr/local/setup.sh:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[5.425374] (hal_flir_d46) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.513479] (-) TimerEvent: {}
+[5.515567] (hal_flir_d46) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.536556] (hal_flir_d46) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.538033] (hal_flir_d46) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.541758] (hal_flir_d46) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.549953] (hal_flir_d46) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.557677] (hal_flir_d46) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.579885] (hal_flir_d46) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.580847] (hal_flir_d46) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.613532] (-) TimerEvent: {}
+[5.663066] (hal_flir_d46) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.696153] (hal_flir_d46) StdoutLine: {'line': b'-- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)\n'}
+[5.713643] (-) TimerEvent: {}
+[5.715694] (hal_flir_d46) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[5.727804] (hal_flir_d46) StdoutLine: {'line': b'-- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[5.733594] (hal_flir_d46) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[5.752848] (hal_flir_d46) StdoutLine: {'line': b'-- Found serial: 2.0.1 (/opt/ros/humble/share/serial/cmake)\n'}
+[5.753123] (hal_flir_d46) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[5.757391] (hal_flir_d46) StdoutLine: {'line': b'-- Found ptu_interfaces: 0.0.0 (/home/cole/cole_ws/install/ptu_interfaces/share/ptu_interfaces/cmake)\n'}
+[5.813724] (-) TimerEvent: {}
+[5.815285] (hal_flir_d46) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.824002] (hal_flir_d46) StdoutLine: {'line': b'-- Generating done\n'}
+[5.827294] (hal_flir_d46) StdoutLine: {'line': b'-- Build files have been written to: /home/cole/cole_ws/build/hal_flir_d46\n'}
+[5.834021] (hal_flir_d46) CommandEnded: {'returncode': 0}
+[5.834625] (hal_flir_d46) JobProgress: {'identifier': 'hal_flir_d46', 'progress': 'build'}
+[5.834656] (hal_flir_d46) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cole/cole_ws/build/hal_flir_d46', '--', '-j16', '-l16'], 'cwd': '/home/cole/cole_ws/build/hal_flir_d46', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cole/cole_ws/install/ptu_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2247'), ('SYSTEMD_EXEC_PID', '2433'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6981'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:16167'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403'), ('INVOCATION_ID', '9317abea0dc545b8a01e28944f713783'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SPINNAKER_GENTL64_CTI', '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JSME12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/ptu_interfaces:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/hal_flir_d46'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages:/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/spinnaker-gentl'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/cole/cole_ws/install/ptu_interfaces:/tmp/usr/local/setup.sh:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[5.877404] (hal_flir_d46) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/HALFlirExecutable.dir/rclcpp_components/node_main_HALFlirExecutable.cpp.o\x1b[0m\n'}
+[5.877628] (hal_flir_d46) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/hal_flir_d46.dir/src/driver.cpp.o\x1b[0m\n'}
+[5.877718] (hal_flir_d46) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/hal_flir_d46.dir/src/HALPTUFlirD46.cpp.o\x1b[0m\n'}
+[5.913965] (-) TimerEvent: {}
+[6.014357] (-) TimerEvent: {}
+[6.114707] (-) TimerEvent: {}
+[6.215092] (-) TimerEvent: {}
+[6.315560] (-) TimerEvent: {}
+[6.416858] (-) TimerEvent: {}
+[6.517449] (-) TimerEvent: {}
+[6.617712] (-) TimerEvent: {}
+[6.718024] (-) TimerEvent: {}
+[6.818271] (-) TimerEvent: {}
+[6.918516] (-) TimerEvent: {}
+[7.018768] (-) TimerEvent: {}
+[7.119084] (-) TimerEvent: {}
+[7.219502] (-) TimerEvent: {}
+[7.319850] (-) TimerEvent: {}
+[7.420094] (-) TimerEvent: {}
+[7.520330] (-) TimerEvent: {}
+[7.620662] (-) TimerEvent: {}
+[7.720917] (-) TimerEvent: {}
+[7.821149] (-) TimerEvent: {}
+[7.921400] (-) TimerEvent: {}
+[8.021654] (-) TimerEvent: {}
+[8.094765] (hal_flir_d46) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable HALFlirExecutable\x1b[0m\n'}
+[8.121788] (-) TimerEvent: {}
+[8.167753] (hal_flir_d46) StdoutLine: {'line': b'[ 80%] Built target HALFlirExecutable\n'}
+[8.221963] (-) TimerEvent: {}
+[8.322196] (-) TimerEvent: {}
+[8.422524] (-) TimerEvent: {}
+[8.522839] (-) TimerEvent: {}
+[8.623078] (-) TimerEvent: {}
+[8.723408] (-) TimerEvent: {}
+[8.823729] (-) TimerEvent: {}
+[8.924078] (-) TimerEvent: {}
+[9.024393] (-) TimerEvent: {}
+[9.124711] (-) TimerEvent: {}
+[9.225020] (-) TimerEvent: {}
+[9.325340] (-) TimerEvent: {}
+[9.425645] (-) TimerEvent: {}
+[9.525971] (-) TimerEvent: {}
+[9.626287] (-) TimerEvent: {}
+[9.726601] (-) TimerEvent: {}
+[9.826922] (-) TimerEvent: {}
+[9.927147] (-) TimerEvent: {}
+[10.027450] (-) TimerEvent: {}
+[10.127707] (-) TimerEvent: {}
+[10.228036] (-) TimerEvent: {}
+[10.328350] (-) TimerEvent: {}
+[10.428654] (-) TimerEvent: {}
+[10.529046] (-) TimerEvent: {}
+[10.629608] (-) TimerEvent: {}
+[10.730045] (-) TimerEvent: {}
+[10.830409] (-) TimerEvent: {}
+[10.930746] (-) TimerEvent: {}
+[11.031059] (-) TimerEvent: {}
+[11.131275] (-) TimerEvent: {}
+[11.231575] (-) TimerEvent: {}
+[11.331870] (-) TimerEvent: {}
+[11.432179] (-) TimerEvent: {}
+[11.532416] (-) TimerEvent: {}
+[11.632709] (-) TimerEvent: {}
+[11.733002] (-) TimerEvent: {}
+[11.833298] (-) TimerEvent: {}
+[11.933591] (-) TimerEvent: {}
+[12.033884] (-) TimerEvent: {}
+[12.134107] (-) TimerEvent: {}
+[12.234406] (-) TimerEvent: {}
+[12.334646] (-) TimerEvent: {}
+[12.434949] (-) TimerEvent: {}
+[12.535165] (-) TimerEvent: {}
+[12.635451] (-) TimerEvent: {}
+[12.735708] (-) TimerEvent: {}
+[12.836006] (-) TimerEvent: {}
+[12.936339] (-) TimerEvent: {}
+[13.036674] (-) TimerEvent: {}
+[13.137058] (-) TimerEvent: {}
+[13.237394] (-) TimerEvent: {}
+[13.337657] (-) TimerEvent: {}
+[13.437980] (-) TimerEvent: {}
+[13.538287] (-) TimerEvent: {}
+[13.638589] (-) TimerEvent: {}
+[13.738886] (-) TimerEvent: {}
+[13.839189] (-) TimerEvent: {}
+[13.939484] (-) TimerEvent: {}
+[14.039786] (-) TimerEvent: {}
+[14.140145] (-) TimerEvent: {}
+[14.240473] (-) TimerEvent: {}
+[14.340786] (-) TimerEvent: {}
+[14.441099] (-) TimerEvent: {}
+[14.541399] (-) TimerEvent: {}
+[14.641697] (-) TimerEvent: {}
+[14.742003] (-) TimerEvent: {}
+[14.842312] (-) TimerEvent: {}
+[14.942611] (-) TimerEvent: {}
+[15.042927] (-) TimerEvent: {}
+[15.076502] (hal_flir_d46) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libhal_flir_d46.so\x1b[0m\n'}
+[15.143034] (-) TimerEvent: {}
+[15.193045] (hal_flir_d46) StdoutLine: {'line': b'[100%] Built target hal_flir_d46\n'}
+[15.204043] (hal_flir_d46) CommandEnded: {'returncode': 0}
+[15.204495] (hal_flir_d46) JobProgress: {'identifier': 'hal_flir_d46', 'progress': 'install'}
+[15.204748] (hal_flir_d46) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cole/cole_ws/build/hal_flir_d46'], 'cwd': '/home/cole/cole_ws/build/hal_flir_d46', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/cole/cole_ws/install/ptu_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2247'), ('SYSTEMD_EXEC_PID', '2433'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6981'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:16167'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/opt/spinnaker/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2403,unix/coles-work-machine:/tmp/.ICE-unix/2403'), ('INVOCATION_ID', '9317abea0dc545b8a01e28944f713783'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SPINNAKER_GENTL64_CTI', '/opt/ros/humble/lib/spinnaker-gentl/Spinnaker_GenTL.cti'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JSME12'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/ptu_interfaces:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3a2449a4-45ef-4cac-9a39-49a5be01762f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/hal_flir_d46'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/cole/cole_ws/install/ptu_interfaces/local/lib/python3.10/dist-packages:/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('GENICAM_GENTL64_PATH', '/opt/spinnaker/lib/spinnaker-gentl'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/cole/cole_ws/install/ptu_interfaces:/tmp/usr/local/setup.sh:/home/cole/cole_ws/install/video_stream:/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[15.212171] (hal_flir_d46) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.212322] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/lib/hal_flir_d46/HALFlirExecutable\n'}
+[15.212608] (hal_flir_d46) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/hal_flir_d46/lib/hal_flir_d46/HALFlirExecutable" to ""\n'}
+[15.212705] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/lib/libhal_flir_d46.so\n'}
+[15.214035] (hal_flir_d46) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/hal_flir_d46/lib/libhal_flir_d46.so" to ""\n'}
+[15.214141] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46//launch\n'}
+[15.214173] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46//launch/flir_d46.launch.py\n'}
+[15.214217] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46//params\n'}
+[15.214260] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46//params/params_pasqualone.yaml\n'}
+[15.214302] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46//params/params_xarm_wac.yaml\n'}
+[15.214340] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46//params/params_xarm.yaml\n'}
+[15.214503] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/ament_index/resource_index/package_run_dependencies/hal_flir_d46\n'}
+[15.214679] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/ament_index/resource_index/parent_prefix_path/hal_flir_d46\n'}
+[15.214844] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/environment/ament_prefix_path.sh\n'}
+[15.214993] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/environment/ament_prefix_path.dsv\n'}
+[15.215101] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/environment/path.sh\n'}
+[15.215184] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/environment/path.dsv\n'}
+[15.215317] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/local_setup.bash\n'}
+[15.215429] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/local_setup.sh\n'}
+[15.215573] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/local_setup.zsh\n'}
+[15.215691] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/local_setup.dsv\n'}
+[15.215804] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/package.dsv\n'}
+[15.215966] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/ament_index/resource_index/packages/hal_flir_d46\n'}
+[15.216109] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/ament_index/resource_index/rclcpp_components/hal_flir_d46\n'}
+[15.216250] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/cmake/hal_flir_d46Config.cmake\n'}
+[15.216360] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/cmake/hal_flir_d46Config-version.cmake\n'}
+[15.216446] (hal_flir_d46) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/hal_flir_d46/share/hal_flir_d46/package.xml\n'}
+[15.218160] (hal_flir_d46) CommandEnded: {'returncode': 0}
+[15.229642] (hal_flir_d46) JobEnded: {'identifier': 'hal_flir_d46', 'rc': 0}
+[15.230122] (-) EventReactorShutdown: {}

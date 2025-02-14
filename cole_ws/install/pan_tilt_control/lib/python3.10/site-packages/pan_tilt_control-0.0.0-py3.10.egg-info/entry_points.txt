@@ -1,0 +1,3 @@
+[console_scripts]
+pan_tilt_joy = pan_tilt_control.pan_tilt_joy:main
+

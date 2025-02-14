@@ -1,0 +1,8 @@
+- topic_name: "/keyboard/keypress"
+  ros_type_name: "std_msgs/msg/Int32"
+  ignition_type_name: "ignition.msgs.Int32"
+
+- ignition_topic_name: "/world/sonoma/model/marble_husky_sensor_config_1/link/base_link/sensor/front_laser/scan/points"
+  ros_topic_name: "/world/sonoma/husky/link/base_link/sensor/front_laser"
+  ros_type_name: "sensor_msgs/msg/PointCloud2"
+  ignition_type_name: "ignition.msgs.PointCloudPacked"

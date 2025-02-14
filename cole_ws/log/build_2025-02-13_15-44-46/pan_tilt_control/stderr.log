@@ -1,0 +1,5 @@
+  File "/home/cole/cole_ws/install/pan_tilt_control/lib/python3.10/site-packages/pan_tilt_control/pan_tilt_joy.py", line 30
+    print(msg.data
+         ^
+SyntaxError: '(' was never closed
+

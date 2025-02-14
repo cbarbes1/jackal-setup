@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from ptu_interfaces/srv/SetPanTilt.srv
+// generated code does not contain a copyright notice
+
+
+module ptu_interfaces {
+  module srv {
+    struct SetPanTilt_Request {
+      float pan;
+
+      float tilt;
+    };
+    struct SetPanTilt_Response {
+      boolean ret;
+    };
+  };
+};

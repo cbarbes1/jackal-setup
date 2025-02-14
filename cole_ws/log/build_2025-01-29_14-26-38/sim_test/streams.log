@@ -1,0 +1,85 @@
+[0.007s] Invoking command in '/home/cole/cole_ws/build/sim_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cole/cole_ws/build/sim_test -- -j16 -l16
+[0.030s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.134s] -- Found ros_gz: 0.244.16 (/opt/ros/humble/share/ros_gz/cmake)
+[0.134s] -- Found ros_gz_sim: 0.244.16 (/opt/ros/humble/share/ros_gz_sim/cmake)
+[0.165s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.168s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.174s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.182s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.192s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.220s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.222s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.316s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.368s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.379s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.434s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.434s] -- Configured cppcheck include dirs: 
+[0.434s] -- Configured cppcheck exclude dirs and/or files: 
+[0.435s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.436s] -- Added test 'lint_cmake' to check CMake code style
+[0.436s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.438s] -- Added test 'uncrustify' to check C / C++ code style
+[0.439s] -- Configured uncrustify additional arguments: 
+[0.439s] -- Added test 'xmllint' to check XML markup files
+[0.440s] -- Configuring done
+[0.448s] -- Generating done
+[0.450s] -- Build files have been written to: /home/cole/cole_ws/build/sim_test
+[0.472s] [35m[1mConsolidate compiler generated dependencies of target keypress[0m
+[0.490s] [100%] Built target keypress
+[0.504s] Invoked command in '/home/cole/cole_ws/build/sim_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/cole/cole_ws/build/sim_test -- -j16 -l16
+[0.516s] Invoking command in '/home/cole/cole_ws/build/sim_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cole/cole_ws/build/sim_test
+[0.525s] -- Install configuration: ""
+[0.525s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/lib/sim_test/keypress
+[0.526s] -- Installing: /home/cole/cole_ws/install/sim_test/share/sim_test//config
+[0.526s] -- Installing: /home/cole/cole_ws/install/sim_test/share/sim_test//config/husky.rviz
+[0.527s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//launch
+[0.527s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//launch/sonoma.launch.py
+[0.527s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//worlds
+[0.527s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//worlds/sonoma2.sdf
+[0.527s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//worlds/sonoma.sdf
+[0.527s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models
+[0.527s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky
+[0.527s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/model.config
+[0.527s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails
+[0.528s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/4.jpg
+[0.528s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/3.jpg
+[0.528s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/2.jpg
+[0.528s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/1.jpg
+[0.528s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes
+[0.528s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/spotlight.dae
+[0.528s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/VLP16_scan.dae
+[0.528s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/base_link.dae
+[0.529s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/realsense.dae
+[0.529s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/user_rail.dae
+[0.529s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/wheel.dae
+[0.529s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/top_chassis.dae
+[0.529s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/VLP16_base_2.dae
+[0.529s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/jpl04_arch_nosensor.stl
+[0.530s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/VLP16_base_1.dae
+[0.530s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/top_plate.dae
+[0.530s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/bumper.dae
+[0.530s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/model.sdf
+[0.530s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials/textures
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials/textures/realsense_diffuse.jpg
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials/textures/spotlight.jpg
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot1
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot1/model.sdf
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot2
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot2/model.sdf
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/ament_index/resource_index/package_run_dependencies/sim_test
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/ament_index/resource_index/parent_prefix_path/sim_test
+[0.531s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/ament_prefix_path.sh
+[0.531s] -- Installing: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/ament_prefix_path.dsv
+[0.532s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/path.sh
+[0.532s] -- Installing: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/path.dsv
+[0.532s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.bash
+[0.532s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.sh
+[0.532s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.zsh
+[0.532s] -- Installing: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.dsv
+[0.532s] -- Installing: /home/cole/cole_ws/install/sim_test/share/sim_test/package.dsv
+[0.532s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/ament_index/resource_index/packages/sim_test
+[0.532s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/cmake/sim_testConfig.cmake
+[0.532s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/cmake/sim_testConfig-version.cmake
+[0.532s] -- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/package.xml
+[0.533s] Invoked command in '/home/cole/cole_ws/build/sim_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/cole/cole_ws/build/sim_test

@@ -1,0 +1,141 @@
+[0.000000] (-) TimerEvent: {}
+[0.000127] (sim_test) JobQueued: {'identifier': 'sim_test', 'dependencies': OrderedDict()}
+[0.000168] (sim_test) JobStarted: {'identifier': 'sim_test'}
+[0.006769] (sim_test) JobProgress: {'identifier': 'sim_test', 'progress': 'cmake'}
+[0.007277] (sim_test) JobProgress: {'identifier': 'sim_test', 'progress': 'build'}
+[0.007710] (sim_test) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/cole/cole_ws/build/sim_test', '--', '-j16', '-l16'], 'cwd': '/home/cole/cole_ws/build/sim_test', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2091'), ('SYSTEMD_EXEC_PID', '2269'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4924'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:9550'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2240,unix/coles-work-machine:/tmp/.ICE-unix/2240'), ('INVOCATION_ID', 'ac7295c99fa847b79dd0b373eac9e68a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JQJ602'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d7fa0f0d-e1d3-4fe5-888c-c38155c9993c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/sim_test'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[0.082458] (sim_test) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target keypress\x1b[0m\n'}
+[0.099635] (-) TimerEvent: {}
+[0.116692] (sim_test) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/keypress.dir/src/husky_controller.cpp.o\x1b[0m\n'}
+[0.199827] (-) TimerEvent: {}
+[0.300201] (-) TimerEvent: {}
+[0.400505] (-) TimerEvent: {}
+[0.500888] (-) TimerEvent: {}
+[0.601293] (-) TimerEvent: {}
+[0.701671] (-) TimerEvent: {}
+[0.802060] (-) TimerEvent: {}
+[0.902470] (-) TimerEvent: {}
+[1.002849] (-) TimerEvent: {}
+[1.103248] (-) TimerEvent: {}
+[1.203661] (-) TimerEvent: {}
+[1.304045] (-) TimerEvent: {}
+[1.404448] (-) TimerEvent: {}
+[1.504859] (-) TimerEvent: {}
+[1.558918] (sim_test) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.559137] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.559235] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.559316] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.559387] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.559454] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.559521] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.559587] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.559652] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.559718] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.559785] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.559851] (sim_test) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:6\x1b[m\x1b[K:\n'}
+[1.559916] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid HuskyController::timer_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.559983] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:31:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%d\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Klong int\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.560061] (sim_test) StderrLine: {'line': b'   31 |                   RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"Publishing: \'%d\'"\x1b[m\x1b[K, \x1b[32m\x1b[Kinput\x1b[m\x1b[K);\n'}
+[1.560128] (sim_test) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~\x1b[m\x1b[K\n'}
+[1.560194] (sim_test) StderrLine: {'line': b'      |                                                                       \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[1.560268] (sim_test) StderrLine: {'line': b'      |                                                                       \x1b[32m\x1b[Klong int\x1b[m\x1b[K\n'}
+[1.560334] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:31:66:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[1.560397] (sim_test) StderrLine: {'line': b'   31 |                   RCLCPP_INFO(this->get_logger(), "Publishing: \'\x1b[01;36m\x1b[K%d\x1b[m\x1b[K\'", input);\n'}
+[1.560460] (sim_test) StderrLine: {'line': b'      |                                                                 \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[1.560523] (sim_test) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[1.560587] (sim_test) StderrLine: {'line': b'      |                                                                  \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[1.560649] (sim_test) StderrLine: {'line': b'      |                                                                 \x1b[32m\x1b[K%ld\x1b[m\x1b[K\n'}
+[1.560713] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:25:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kvariable \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 set but not used [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable\x07-Wunused-but-set-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.560779] (sim_test) StderrLine: {'line': b'   25 |                   auto \x1b[01;35m\x1b[Kmsg\x1b[m\x1b[K = geometry_msgs::msg::Twist();\n'}
+[1.560842] (sim_test) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.560905] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:26:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.560971] (sim_test) StderrLine: {'line': b'   26 |                   float \x1b[01;35m\x1b[Klx\x1b[m\x1b[K,ly,lz,ax,ay,az;\n'}
+[1.561034] (sim_test) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.561102] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:26:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kly\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.561166] (sim_test) StderrLine: {'line': b'   26 |                   float lx,\x1b[01;35m\x1b[Kly\x1b[m\x1b[K,lz,ax,ay,az;\n'}
+[1.561232] (sim_test) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.561297] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:26:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Klz\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.561368] (sim_test) StderrLine: {'line': b'   26 |                   float lx,ly,\x1b[01;35m\x1b[Klz\x1b[m\x1b[K,ax,ay,az;\n'}
+[1.561431] (sim_test) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.561493] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:26:34:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kax\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.561556] (sim_test) StderrLine: {'line': b'   26 |                   float lx,ly,lz,\x1b[01;35m\x1b[Kax\x1b[m\x1b[K,ay,az;\n'}
+[1.561617] (sim_test) StderrLine: {'line': b'      |                                  \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.561677] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:26:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kay\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.561740] (sim_test) StderrLine: {'line': b'   26 |                   float lx,ly,lz,ax,\x1b[01;35m\x1b[Kay\x1b[m\x1b[K,az;\n'}
+[1.561802] (sim_test) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.561863] (sim_test) StderrLine: {'line': b'\x1b[01m\x1b[K/home/cole/cole_ws/src/sim_test/src/husky_controller.cpp:26:40:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kaz\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.561925] (sim_test) StderrLine: {'line': b'   26 |                   float lx,ly,lz,ax,ay,\x1b[01;35m\x1b[Kaz\x1b[m\x1b[K;\n'}
+[1.561986] (sim_test) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.605041] (-) TimerEvent: {}
+[1.705409] (-) TimerEvent: {}
+[1.805782] (-) TimerEvent: {}
+[1.906157] (-) TimerEvent: {}
+[2.006563] (-) TimerEvent: {}
+[2.106953] (-) TimerEvent: {}
+[2.207328] (-) TimerEvent: {}
+[2.307706] (-) TimerEvent: {}
+[2.408053] (-) TimerEvent: {}
+[2.508639] (-) TimerEvent: {}
+[2.603005] (sim_test) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable keypress\x1b[0m\n'}
+[2.608950] (-) TimerEvent: {}
+[2.709272] (-) TimerEvent: {}
+[2.748634] (sim_test) StdoutLine: {'line': b'[100%] Built target keypress\n'}
+[2.756971] (sim_test) CommandEnded: {'returncode': 0}
+[2.757782] (sim_test) JobProgress: {'identifier': 'sim_test', 'progress': 'install'}
+[2.768743] (sim_test) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/cole/cole_ws/build/sim_test'], 'cwd': '/home/cole/cole_ws/build/sim_test', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'cole'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/cole'), ('OLDPWD', '/home/cole/cole_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2091'), ('SYSTEMD_EXEC_PID', '2269'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4924'), ('_colcon_cd_root', '/home/cole/dev_ws'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/cole/cole_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'cole'), ('JOURNAL_STREAM', '8:9550'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'cole'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/home/cole/dev_ws/src/basic_mobile_robot/models/'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/cole/.local/bin:/opt/ros/humble/bin:/home/cole/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/coles-work-machine:@/tmp/.ICE-unix/2240,unix/coles-work-machine:/tmp/.ICE-unix/2240'), ('INVOCATION_ID', 'ac7295c99fa847b79dd0b373eac9e68a'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JQJ602'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/cole/cole_ws/install/sim_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:d7fa0f0d-e1d3-4fe5-888c-c38155c9993c'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('IGN_GAZEBO_RESOURCE_PATH', ':/home/cole/cole_ws/install/sim_test/models'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/cole/cole_ws/build/sim_test'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/cole/cole_ws/install/sim_test:/opt/ros/humble')]), 'shell': False}
+[2.777957] (sim_test) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.778837] (sim_test) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/sim_test/lib/sim_test/keypress\n'}
+[2.779855] (sim_test) StdoutLine: {'line': b'-- Set runtime path of "/home/cole/cole_ws/install/sim_test/lib/sim_test/keypress" to ""\n'}
+[2.780052] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//launch\n'}
+[2.780374] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//launch/sonoma.launch.py\n'}
+[2.780558] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//worlds\n'}
+[2.780652] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//worlds/sonoma2.sdf\n'}
+[2.780720] (sim_test) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/sim_test/share/sim_test//worlds/sonoma.sdf\n'}
+[2.781017] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models\n'}
+[2.781110] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky\n'}
+[2.781185] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/model.config\n'}
+[2.781531] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails\n'}
+[2.781640] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/4.jpg\n'}
+[2.781713] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/3.jpg\n'}
+[2.781781] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/2.jpg\n'}
+[2.781844] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/thumbnails/1.jpg\n'}
+[2.781983] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes\n'}
+[2.782061] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/spotlight.dae\n'}
+[2.782124] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/VLP16_scan.dae\n'}
+[2.782184] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/base_link.dae\n'}
+[2.782255] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/realsense.dae\n'}
+[2.782374] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/user_rail.dae\n'}
+[2.782443] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/wheel.dae\n'}
+[2.782505] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/top_chassis.dae\n'}
+[2.782570] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/VLP16_base_2.dae\n'}
+[2.782634] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/jpl04_arch_nosensor.stl\n'}
+[2.782694] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/VLP16_base_1.dae\n'}
+[2.782753] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/top_plate.dae\n'}
+[2.782903] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/meshes/bumper.dae\n'}
+[2.782970] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/model.sdf\n'}
+[2.783032] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials\n'}
+[2.783123] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials/textures\n'}
+[2.783185] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials/textures/realsense_diffuse.jpg\n'}
+[2.783250] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/husky/materials/textures/spotlight.jpg\n'}
+[2.783314] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot1\n'}
+[2.783378] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot1/model.sdf\n'}
+[2.783438] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot2\n'}
+[2.783499] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test//models/robot2/model.sdf\n'}
+[2.783559] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/ament_index/resource_index/package_run_dependencies/sim_test\n'}
+[2.783619] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/ament_index/resource_index/parent_prefix_path/sim_test\n'}
+[2.783680] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/ament_prefix_path.sh\n'}
+[2.783740] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/ament_prefix_path.dsv\n'}
+[2.783836] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/path.sh\n'}
+[2.783891] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/environment/path.dsv\n'}
+[2.783948] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.bash\n'}
+[2.784004] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.sh\n'}
+[2.784057] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.zsh\n'}
+[2.784112] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/local_setup.dsv\n'}
+[2.784166] (sim_test) StdoutLine: {'line': b'-- Installing: /home/cole/cole_ws/install/sim_test/share/sim_test/package.dsv\n'}
+[2.784223] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/ament_index/resource_index/packages/sim_test\n'}
+[2.784279] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/cmake/sim_testConfig.cmake\n'}
+[2.784339] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/cmake/sim_testConfig-version.cmake\n'}
+[2.784391] (sim_test) StdoutLine: {'line': b'-- Up-to-date: /home/cole/cole_ws/install/sim_test/share/sim_test/package.xml\n'}
+[2.785364] (sim_test) CommandEnded: {'returncode': 0}
+[2.801682] (sim_test) JobEnded: {'identifier': 'sim_test', 'rc': 0}
+[2.802005] (-) EventReactorShutdown: {}

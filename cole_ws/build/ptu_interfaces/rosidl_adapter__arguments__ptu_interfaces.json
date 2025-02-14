@@ -1,0 +1,14 @@
+{
+  "package_name": "ptu_interfaces",
+  "non_idl_tuples": [
+    "/home/cole/cole_ws/src/ROS2-PTU-Interfaces:msg/PTU.msg",
+    "/home/cole/cole_ws/src/ROS2-PTU-Interfaces:srv/SetPan.srv",
+    "/home/cole/cole_ws/src/ROS2-PTU-Interfaces:srv/SetTilt.srv",
+    "/home/cole/cole_ws/src/ROS2-PTU-Interfaces:srv/SetPanTilt.srv",
+    "/home/cole/cole_ws/src/ROS2-PTU-Interfaces:srv/SetPanTiltSpeed.srv",
+    "/home/cole/cole_ws/src/ROS2-PTU-Interfaces:srv/GetLimits.srv",
+    "/home/cole/cole_ws/src/ROS2-PTU-Interfaces:action/SetPan.action",
+    "/home/cole/cole_ws/src/ROS2-PTU-Interfaces:action/SetTilt.action",
+    "/home/cole/cole_ws/src/ROS2-PTU-Interfaces:action/SetPanTilt.action"
+  ]
+}

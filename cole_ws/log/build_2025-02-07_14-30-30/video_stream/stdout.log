@@ -1,0 +1,23 @@
+running egg_info
+writing ../../build/video_stream/video_stream.egg-info/PKG-INFO
+writing dependency_links to ../../build/video_stream/video_stream.egg-info/dependency_links.txt
+writing entry points to ../../build/video_stream/video_stream.egg-info/entry_points.txt
+writing requirements to ../../build/video_stream/video_stream.egg-info/requires.txt
+writing top-level names to ../../build/video_stream/video_stream.egg-info/top_level.txt
+reading manifest file '../../build/video_stream/video_stream.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/video_stream/video_stream.egg-info/SOURCES.txt'
+running build
+running build_py
+copying video_stream/video_pub.py -> /home/cole/cole_ws/build/video_stream/build/lib/video_stream
+running install
+running install_lib
+copying /home/cole/cole_ws/build/video_stream/build/lib/video_stream/video_pub.py -> /home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages/video_stream
+byte-compiling /home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages/video_stream/video_pub.py to video_pub.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages/video_stream-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/video_stream/video_stream.egg-info to /home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages/video_stream-0.0.0-py3.10.egg-info
+running install_scripts
+Installing video_pub script to /home/cole/cole_ws/install/video_stream/lib/video_stream
+writing list of installed files to '/home/cole/cole_ws/build/video_stream/install.log'

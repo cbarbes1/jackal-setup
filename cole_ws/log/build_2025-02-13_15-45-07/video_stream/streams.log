@@ -1,0 +1,23 @@
+[0.592s] Invoking command in '/home/cole/cole_ws/src/video_stream': PYTHONPATH=/home/cole/cole_ws/build/video_stream/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/video_stream build --build-base /home/cole/cole_ws/build/video_stream/build install --record /home/cole/cole_ws/build/video_stream/install.log --single-version-externally-managed install_data
+[0.746s] running egg_info
+[0.746s] writing ../../build/video_stream/video_stream.egg-info/PKG-INFO
+[0.746s] writing dependency_links to ../../build/video_stream/video_stream.egg-info/dependency_links.txt
+[0.746s] writing entry points to ../../build/video_stream/video_stream.egg-info/entry_points.txt
+[0.746s] writing requirements to ../../build/video_stream/video_stream.egg-info/requires.txt
+[0.747s] writing top-level names to ../../build/video_stream/video_stream.egg-info/top_level.txt
+[0.748s] reading manifest file '../../build/video_stream/video_stream.egg-info/SOURCES.txt'
+[0.748s] adding license file 'LICENSE'
+[0.748s] writing manifest file '../../build/video_stream/video_stream.egg-info/SOURCES.txt'
+[0.748s] running build
+[0.748s] running build_py
+[0.748s] running install
+[0.749s] running install_lib
+[0.749s] running install_data
+[0.749s] running install_egg_info
+[0.750s] removing '/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages/video_stream-0.0.0-py3.10.egg-info' (and everything under it)
+[0.751s] Copying ../../build/video_stream/video_stream.egg-info to /home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages/video_stream-0.0.0-py3.10.egg-info
+[0.751s] running install_scripts
+[0.764s] Installing video_detect_pub script to /home/cole/cole_ws/install/video_stream/lib/video_stream
+[0.764s] Installing video_pub script to /home/cole/cole_ws/install/video_stream/lib/video_stream
+[0.765s] writing list of installed files to '/home/cole/cole_ws/build/video_stream/install.log'
+[0.781s] Invoked command in '/home/cole/cole_ws/src/video_stream' returned '0': PYTHONPATH=/home/cole/cole_ws/build/video_stream/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cole/cole_ws/install/video_stream/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/video_stream build --build-base /home/cole/cole_ws/build/video_stream/build install --record /home/cole/cole_ws/build/video_stream/install.log --single-version-externally-managed install_data

@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-10169befbf09a25a79fe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hal_flir_d46",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "HALFlirExecutable::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-HALFlirExecutable-1830de6a07999e488539.json",
+					"name" : "HALFlirExecutable",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hal_flir_d46::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hal_flir_d46-097a3fd523b2a64ddc93.json",
+					"name" : "hal_flir_d46",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hal_flir_d46_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hal_flir_d46_uninstall-6b5e412192ed834d30ba.json",
+					"name" : "hal_flir_d46_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-b82162af4c2f210b0716.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/cole/cole_ws/build/hal_flir_d46",
+		"source" : "/home/cole/cole_ws/src/ROS2-HAL-Flir-PTU-D46"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

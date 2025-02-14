@@ -1,0 +1,57 @@
+Panels:
+  - Class: rviz_common/DisplaysPanel
+    Name: Displays
+  - Class: rviz_common/SelectionPanel
+    Name: Selection
+  - Class: rviz_common/ToolPropertiesPanel
+    Name: Tool Properties
+  - Class: rviz_common/ViewsPanel
+    Name: Views
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 0
+      Frames:
+        All Enabled: true
+      Marker Scale: 1
+      Name: TF
+      Show Axes: true
+      Show Names: false
+      Show Arrows: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Description Source: "robot_description"
+      Enabled: true
+      Name: RobotModel
+      Update Interval: 0
+    - Alpha: 1
+      Class: rviz_default_plugins/LaserScan
+      Enabled: true
+      Name: LaserScan
+      Queue Size: 10
+      Topic: "/scan"
+      Color Transformer: "Intensity"
+      Size (m): 0.1
+  Enabled: true
+  Global Options:
+    Background Color: [48, 48, 48]
+    Fixed Frame: "marble_husky_sensor_config_1/base_link/front_laser"
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 10
+      Focal Point: [0, 0, 0]
+      Pitch: 0.785
+      Yaw: 0.785
+

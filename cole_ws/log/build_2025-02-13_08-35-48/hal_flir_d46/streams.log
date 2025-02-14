@@ -1,0 +1,35 @@
+[0.175s] Invoking command in '/home/cole/cole_ws/build/hal_flir_d46': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cole/cole_ws/install/video_stream:/opt/ros/humble /usr/bin/cmake /home/cole/cole_ws/src/ROS2-HAL-Flir-PTU-D46 -DCMAKE_INSTALL_PREFIX=/home/cole/cole_ws/install/hal_flir_d46
+[0.185s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.273s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.291s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.293s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.296s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.302s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.310s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.330s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.331s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.409s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.440s] -- Found rclcpp_action: 16.0.11 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.459s] -- Found rclcpp_components: 16.0.11 (/opt/ros/humble/share/rclcpp_components/cmake)
+[0.471s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[0.476s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.502s] [31mCMake Error at CMakeLists.txt:29 (find_package):
+[0.502s]   By not providing "Findserial.cmake" in CMAKE_MODULE_PATH this project has
+[0.502s]   asked CMake to find a package configuration file provided by "serial", but
+[0.502s]   CMake did not find one.
+[0.502s] 
+[0.502s]   Could not find a package configuration file provided by "serial" with any
+[0.502s]   of the following names:
+[0.502s] 
+[0.502s]     serialConfig.cmake
+[0.502s]     serial-config.cmake
+[0.502s] 
+[0.502s]   Add the installation prefix of "serial" to CMAKE_PREFIX_PATH or set
+[0.502s]   "serial_DIR" to a directory containing one of the above files.  If "serial"
+[0.502s]   provides a separate development package or SDK, be sure it has been
+[0.502s]   installed.
+[0.502s] 
+[0.502s] [0m
+[0.502s] -- Configuring incomplete, errors occurred!
+[0.502s] See also "/home/cole/cole_ws/build/hal_flir_d46/CMakeFiles/CMakeOutput.log".
+[0.507s] Invoked command in '/home/cole/cole_ws/build/hal_flir_d46' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cole/cole_ws/install/video_stream:/opt/ros/humble /usr/bin/cmake /home/cole/cole_ws/src/ROS2-HAL-Flir-PTU-D46 -DCMAKE_INSTALL_PREFIX=/home/cole/cole_ws/install/hal_flir_d46
