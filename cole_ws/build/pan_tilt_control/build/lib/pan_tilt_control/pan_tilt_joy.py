@@ -56,14 +56,14 @@ class PanTiltActionClient(Node):
         Set the lock variable depending on the status
         Set The goal depending on what is allowed by the lock
         """
-        if msg.buttons[0] == 1:
+        if msg.buttons[4] == 1:
             self.lock_pan = False
-        elif msg.buttons[0] == 0:
+        elif msg.buttons[4] == 0:
             self.lock_pan = True
 
-        if msg.buttons[1] == 1:
+        if msg.buttons[5] == 1:
             self.lock_tilt = False
-        elif msg.buttons[1] == 0:
+        elif msg.buttons[5] == 0:
             self.lock_tilt = True
        
         if not self.lock_pan:
