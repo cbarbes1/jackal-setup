@@ -1,2 +1,0 @@
-Invoking command in '/home/cole/cole_ws/build/hal_flir_d46': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cole/cole_ws/install/video_stream:/opt/ros/humble /usr/bin/cmake /home/cole/cole_ws/src/ROS2-HAL-Flir-PTU-D46 -DCMAKE_INSTALL_PREFIX=/home/cole/cole_ws/install/hal_flir_d46
-Invoked command in '/home/cole/cole_ws/build/hal_flir_d46' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cole/cole_ws/install/video_stream:/opt/ros/humble /usr/bin/cmake /home/cole/cole_ws/src/ROS2-HAL-Flir-PTU-D46 -DCMAKE_INSTALL_PREFIX=/home/cole/cole_ws/install/hal_flir_d46

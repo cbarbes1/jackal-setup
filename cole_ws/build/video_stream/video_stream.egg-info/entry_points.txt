@@ -1,4 +1,0 @@
-[console_scripts]
-video_detect_pub = video_stream.video_detect_pub:main
-video_pub = video_stream.video_pub:main
-

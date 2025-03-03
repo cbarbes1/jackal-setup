@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<robot name="jackal_sensors" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Include the base Jackal URDF -->
+  <xacro:include filename="$(find jackal_description)/urdf/jackal.urdf.xacro"/>
+
+  <!-- Blackfly S Camera Link -->
+  <link name="blackfly_camera_link">
+    <!-- You typically don't define geometry for the camera link unless you want it for collision/visual -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.02 0.02 0.02"/> <!-- for illustration -->
+      </geometry>
+      <material name="grey"/>
+    </visual>
+  </link>
+
+  <!-- Joint (fixed) from base_link to blackfly_camera_link -->
+  <joint name="base_to_blackfly_camera" type="fixed">
+    <parent link="base_link"/>
+    <child link="blackfly_camera_link"/>
+    <!-- Replace the xyz/rpy below with your measured or specified offsets -->
+    <origin xyz="0.15 0.0 0.2" rpy="0 0 0"/>
+  </joint>
+
+
+  <!-- Hokuyo LIDAR Link 
+  <link name="hokuyo_link">
+     Similarly, you may add minimal geometry if desired 
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder length="0.06" radius="0.03"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+   Joint (fixed) from base_link to hokuyo_link 
+  <joint name="base_to_hokuyo" type="fixed">
+    <parent link="base_link"/>
+    <child link="hokuyo_link"/>
+     Replace with the actual location and orientation of your LIDAR 
+    <origin xyz="0.1 0.0 0.1" rpy="0 0 0"/>
+  </joint>
+  -->
+
+</robot>
