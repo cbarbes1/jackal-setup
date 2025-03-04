@@ -13,7 +13,7 @@ def generate_launch_description():
     
     
     return LaunchDescription([
-        DeclareLaunchArgument('namespace', default_value='j100'),
+        DeclareLaunchArgument('namespace', default_value='j100_0164'),
         # Below starts the essential drivers for the camera and pan_tilt
         DeclareLaunchArgument('camera_type', default_value='blackfly_s'),
         DeclareLaunchArgument('serial', default_value='21440311'),
