@@ -7,8 +7,11 @@ import rclpy
 from rclpy.action import ActionClient
 from rclpy.node import Node
 
-from ptu_interfaces.action import SetPan, SetTilt
+from ptu_interfaces.action import SetPan, SetTilt, SetPanTilt
+
 from sensor_msgs.msg import Joy
+from rclpy.executors import MultiThreadedExecutor
+from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
 
 class PanTiltActionClient(Node):
     def __init__(self):
@@ -16,8 +19,10 @@ class PanTiltActionClient(Node):
         Initialize the action client and the subscriber for the joy topic, also set lock variables to true
         """
         super().__init__('pantilt_action_client')
-        self._action_client_pan = ActionClient(self, SetPan, '/ptu/set_pan')
-        self._action_client_tilt = ActionClient(self, SetTilt, '/ptu/set_tilt')
+
+        self._action_client_pan = ActionClient(self, SetPan, '/ptu/set_pan_tilt')
+        self._action_client_pan = ActionClient(self, SetTilt, '/ptu/set_pan_tilt')
+
         self.joy_subscriber = self.create_subscription(
             Joy,
             '/j100_0164/joy_teleop/joy',
@@ -29,12 +34,21 @@ class PanTiltActionClient(Node):
         self.lock_pan = True
         self.lock_tilt = True
 
-    def send_goal_pan(self, pan):
+        self.pan_state = 0
+        self.tilt_state = 0
+
+        self.pan = 0
+        self.tilt = 0
+
+        self.movement = 0.075
+
+    def send_goal(self, pan, tilt):
         """
         Set the pan goal for the action and set the feedback callback for this goal
         """
-        goal_msg = SetPan.Goal()
+        goal_msg = SetPanTilt.Goal()
         goal_msg.pan = pan
+        goal_msg.tilt = tilt
         self._action_client_pan.wait_for_server()
 
         self._send_goal_future = self._action_client_pan.send_goal_async(goal_msg, feedback_callback=self.feedback_callback)
@@ -66,15 +80,16 @@ class PanTiltActionClient(Node):
             self.lock_tilt = False
         elif msg.buttons[5] == 0:
             self.lock_tilt = True
+
        
         if not self.lock_pan:
-            pan = msg.axes[3] * 1.5
-            self.send_goal_pan(pan)
+
+            self.pan = msg.axes[3] * 1.5
+            self.send_goal_pan(self.pan)
 
         if not self.lock_tilt:
-            tilt = - msg.axes[4] * 0.4
-            self.send_goal_tilt(tilt)
-
+            self.tilt = - msg.axes[4] * 0.4
+            self.send_goal_tilt(self.tilt)
         
     
     def goal_response_callback(self, future):
@@ -103,8 +118,10 @@ class PanTiltActionClient(Node):
 def main(args=None):
     rclpy.init(args=args)
     action_client = PanTiltActionClient()
+    executor = MultiThreadedExecutor()
+    executor.add_node(action_client)
 
-    rclpy.spin(action_client)
+    executor.spin()
 
     action_client.destroy_node()
 

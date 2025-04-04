@@ -42,3 +42,12 @@ gst-python used
 To be completed.
 
 
+
+
+## Jackal setup steps 
+
+### setup ros2 humble
+
+https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
+
+### Source install 
